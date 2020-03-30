@@ -1,0 +1,145 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.6;
+    font-family: Arial;
+}
+button{
+    all: unset;
+}
+a{
+    text-decoration: none;
+}
+.app-wrapper{
+    padding: 0 8px;
+}
+#top-nav{
+    text-align: right;
+    background: darkblue;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+.top-link{
+    cursor: pointer;
+    margin-right: 2px;
+    padding: 0 8px;
+    color: white;
+    font-size: 14px;
+}
+.top-link:hover, .top-link.active{
+    color: yellow;
+}
+.main-header{
+    margin: auto;
+    box-shadow: 0 1px 0 lightgray;
+    padding: 0 4px;
+}
+.masthead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 100;
+}
+.masthead img{
+    height: 44px;
+}
+.masthead span{
+    color: darkblue;
+
+}
+.masthead span::after{
+    content:"A New Language, A Whole New World";
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    margin-top: -8px;
+    font-style: italic;
+    color: red;
+}
+.main-page{
+    height: calc(100vh - 150px);
+}
+.page-title{
+    text-align: center;
+}
+
+/* Styles for Landing Page Begins */
+#landing-page{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background-image: url('/images/np.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 8px auto;
+}
+.landing-page-wrapper{
+    background: rgba(0, 0, 139, 0.849);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-position: right center;
+    position: relative;
+    padding: 20px;
+    border-top-right-radius: 40%;
+}
+#start-lesson-button{
+    height: 60px;
+    width: 310px;
+    text-align: center;
+    background: white;
+    color: darkblue;
+    font-size: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 350ms all ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#start-lesson-button:hover{
+    color: crimson;
+    font-size: 36px;
+   
+}
+#start-lesson-button img{
+    height: 28px;
+    width: auto;
+}
+#why-nepali{
+    margin: 8px auto;
+    background: white;
+    width: 100%;
+    max-width: 320px;
+    color: darkblue;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+}
+#why-nepali > li{
+    list-style-type: none;
+    color: crimson;
+}
+/* Styles for Landing Page Ends */
+
+footer{
+    text-align: center;
+    font-size: 14px;
+    opacity: .7;
+    box-shadow: 0 0 0 1px lightgray;
+    padding: 8px 0;
+}
