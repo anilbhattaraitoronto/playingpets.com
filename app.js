@@ -5,7 +5,7 @@ import { addToCart } from '/modules/methods/addToCart.js'
 mainApp()
 
 function mainApp() {
-    displayObjects(products, 'product-container')
-    addToCart()
+    // displayObjects(products, 'product-container')
+    // addToCart()
 
 }

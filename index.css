@@ -1,0 +1,94 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+body{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    line-height: 1.6;
+}
+button{
+    all: unset;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+.top-nav{
+    text-align: right;
+    background:  rgb(206, 214, 206) ;
+    padding: 8px 0;
+}
+.top-link{
+    padding: 0 12px;
+    font-size: .9rem;
+}
+#landing{
+    background: rgb(206, 214, 206);
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+.landing-header{
+    padding: 8px 0;
+    width: 100%;
+    /* margin:  auto; */
+    text-align: center;
+    margin: 20px;
+}
+.landing-masthead{
+    font-size: 2.5em;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+.landing-content, .landing-nav, .landing-message{
+    display: flex;
+}
+.landing-content{
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 1px 0 rgb(172, 168, 168);
+    padding: 8px;
+    height: 450px;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 8px;
+}
+.landing-nav{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8px;
+    height: 300px;
+}
+.landing-message{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    max-width: 180px;
+    background: green;
+    color: rgb(175, 166, 166);
+    height: 300px;
+}
+.main-link{
+    padding: 4px 0;
+    /* margin: 20px auto; */
+    background: green;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+.main-link:hover{
+    color: yellow;
+}

@@ -4,34 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/playing_pets_logo.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <title>Playing Pets</title>
 </head>
-<header class="main-header">
-    <a href="/"><img src="/images/playing_pets.svg" alt="Playing Pets logo" title="Playing Pets" class="logo"></a>
-    <h1 class="masthead">Playing Pets</h1>
-    <nav class="main-nav">
-        <a href="/" class="main-link" title="home page">Home</a>
-        <a href="#" class="main-link" title="about page">About</a>
-        <a href="#" class="main-link" title="contact page">Contact</a>
-    </nav>
-</header>
-<section id="your-cart-total">
-    <p>Your Cart Total: $ <span></span> </p>
-</section>
-<section id="shop-container">
-    <main id="product-container"></main>
-    <main id="cart-container">
-        <h2 class="section-title">Shopping Cart</h2>
-        <section id="cart"></section>
-        <p class="cart-amount">Total : $ <span id="cart-total"></span> </p>
-    </main>
-</section>
 
 <body>
+    <nav class="top-nav">
+        <a href="#" class="top-link">Kittens</a>
+        <a href="#" class="top-link">Puppies</a>
+        <a href="#" class="top-link">Bunnies</a>
+        <a href="#" class="top-link">Wilds</a>
+    </nav>
+    <section class="app-wrapper">
+        <!-- home section begins -->
+        <main class="main-page">
+            <article id="landing">
+                <header class="landing-header">
+                    <h1 class="landing-masthead">Playing Cats</h1>
+                </header>
+                <section class="landing-content">
+                    <!-- display this as two column flexbox -->
+                    <div class="landing-message">
+                        <p>In the grand scheme of things, humans are just another species.</p>
+                    </div>
+                    <nav class="landing-nav">
+                        <span class="main-link">Home</span>
+                        <span class="main-link">Forum</span>
+                        <span class="main-link">Blogs</span>
+                        <span class="main-link">Contact</span>
+                    </nav>
+                </section>
+                <div class="landing-bottom">
+                    <p>Latest Blogs</p>
+                </div>
+            </article>
+        </main>
+        <!-- home section ends -->
+        <!-- forum section begins -->
+        <main class="main-page">Forum</main>
+        <!-- forum section ends -->
+        <!-- blog section begins -->
+        <main class="main-page">Blogs</main>
+        <!-- blog section ends -->
+        <!-- about section begins -->
+        <main class="main-page">About</main>
+        <!-- about section ends -->
+    </section>
 
-    <script src="app.js" type="module"></script>
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>
