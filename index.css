@@ -22,9 +22,16 @@ a{
     text-decoration: none;
     color: unset;
 }
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--gradient);
+    padding: 0 8px;
+}
 .top-nav{
     text-align: right;
-    background:  var(--gradient) ;
+    /* background:  var(--gradient) ; */
     padding: 2px;
     z-index: 20;
     position: sticky;
@@ -61,7 +68,7 @@ a{
     font-weight: 800;
     background: var(--masthead-gradient);
     background-clip: text;
-    color: transparent;
+    color: rgba(255, 255, 255, 0.753);
 }
 .landing-content, .landing-nav, .landing-message{
     display: flex;
@@ -94,11 +101,13 @@ a{
     text-align: center;
     height: auto;
     width: 100%;
-    max-width: 180px;
-    background: linear-gradient(60deg, rgba(34, 53, 34, 0.589) 40%, rgba(102, 76, 5, 0.404)50%);;
+    max-width: 280px;
+    background: linear-gradient(60deg, rgba(34, 53, 34, 0.589) 40%, rgba(151, 114, 10, 0.404)50%);;
+    /* background: var(--gradient); */
     color: rgb(238, 231, 231);
     height: 300px;
-    box-shadow: 2px 0px 0px 0px rgb(117, 103, 55);
+    box-shadow: 1px 0px 0px 0px rgb(155, 131, 54);
+    letter-spacing: 1px;
 }
 .main-link{
     padding: 4px 0;
