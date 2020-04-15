@@ -5,8 +5,11 @@
     padding: 0;
     margin: 0;
     font-family: Arial;
+    --gradient: linear-gradient( 10deg, rgb(62, 112, 62) 35%, rgb(170, 143, 70)15%);
+    --masthead-gradient: linear-gradient( 50deg, rgb(33, 88, 33) 300%, rgb(65, 59, 42)50%);
 }
 body{
+    position: relative;
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -21,20 +24,28 @@ a{
 }
 .top-nav{
     text-align: right;
-    background:  rgb(206, 214, 206) ;
-    padding: 8px 0;
+    background:  var(--gradient) ;
+    padding: 2px;
+    z-index: 20;
+    position: sticky;
+    top: 0;
+    /* box-shadow: 0 1px 0 1px rgb(191, 194, 192); */
 }
 .top-link{
-    padding: 0 12px;
+    padding: 0 6px;
     font-size: .9rem;
+    color: rgb(87, 97, 92);
+    letter-spacing: 1px;
 }
 #landing{
-    background: rgb(206, 214, 206);
+    background: var(--gradient);;
     display: flex;
     flex-direction: column;
     height: 650px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin: auto;
+    width: 98%;
 }
 .landing-header{
     padding: 8px 0;
@@ -44,10 +55,13 @@ a{
     margin: 20px;
 }
 .landing-masthead{
-    font-size: 2.5em;
-    word-spacing: 8px;
-    letter-spacing: 2px;
-    font-weight: 300;
+    font-size: 2.3em;
+    word-spacing: 12px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    background: var(--masthead-gradient);
+    background-clip: text;
+    color: transparent;
 }
 .landing-content, .landing-nav, .landing-message{
     display: flex;
@@ -57,10 +71,11 @@ a{
     align-items: center;
     box-shadow: 1px 1px 1px 0 rgb(172, 168, 168);
     padding: 8px;
-    height: 450px;
-    width: 100%;
-    max-width: 650px;
+    height: 350px;
+    width: 98%;
+    max-width: 850px;
     margin: 0 8px;
+    background: var(--gradient);
 }
 .landing-nav{
     flex-direction: column;
@@ -68,6 +83,10 @@ a{
     align-items: center;
     margin: 0 8px;
     height: 300px;
+    width: 100%;
+    max-width: 140px;
+    padding: 8px;
+    /* background: linear-gradient(60deg, rgb(62, 112, 62) 40%, rgb(240, 179, 12)50%);; */
 }
 .landing-message{
     justify-content: center;
@@ -76,19 +95,26 @@ a{
     height: auto;
     width: 100%;
     max-width: 180px;
-    background: green;
-    color: rgb(175, 166, 166);
+    background: linear-gradient(60deg, rgba(34, 53, 34, 0.589) 40%, rgba(102, 76, 5, 0.404)50%);;
+    color: rgb(238, 231, 231);
     height: 300px;
 }
 .main-link{
     padding: 4px 0;
     /* margin: 20px auto; */
-    background: green;
-    width: 150px;
+    background: linear-gradient(60deg, rgb(62, 112, 62) 40%, rgb(226, 169, 13)50%);
+    background: linear-gradient(60deg, rgb(36, 65, 36) 40%, rgba(148, 111, 8, 0.356)50%);;
+
+    width: 120px;
     text-align: center;
     cursor: pointer;
     color: white;
+    box-shadow: 0 0 0 1px rgb(107, 156, 107);
+    transition: 300ms all ease-in-out;
+    letter-spacing: 2px;
+    font-size: .9em;
 }
 .main-link:hover{
     color: yellow;
+    box-shadow: 0 0 0 1px yellow;
 }
